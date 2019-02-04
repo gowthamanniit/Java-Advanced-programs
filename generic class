@@ -1,0 +1,19 @@
+package generic;
+
+public class Test8<T> {
+	private T T;
+	public void setValue(T t)
+	{
+		t=t;
+		System.out.println(T);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Test8<Integer> o=new Test8<>();
+		o.setValue(12);
+	}
+
+}
+
+o/p null
