@@ -1,0 +1,33 @@
+interface HelloWorld
+{
+public void greet();
+public void greetSomeone(String someone);
+}
+
+
+
+public class Test3 {
+	public void sayHello()
+	{
+		HelloWorld s=new HelloWorld() {
+			String name;
+			public void greet()
+			{
+				greetSomeone("hai");
+			}
+			public void greetSomeone(String someone)
+			{
+				name=someone;
+				System.out.println("Salut"+name);
+			}
+		};
+		s.greetSomeone("Fred");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Test3 o=new Test3();
+		o.sayHello();
+	}
+
+}
