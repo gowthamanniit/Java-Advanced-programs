@@ -1,0 +1,15 @@
+		CharSequence input="ab12 cd efg43 asdf 123";
+		String pattStr="([a-zA-Z]+)";
+		Pattern p=Pattern.compile(pattStr);
+		Matcher m=p.matcher(input);
+		StringBuffer f=new StringBuffer();
+		boolean flag=false;
+		while((flag=m.find()))
+		{
+			String rep=m.group();
+			m.appendReplacement(f,"found<"+rep+">");
+			
+		}
+m.appendTail(f);
+String result=f.toString();
+System.out.println(result);
