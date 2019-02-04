@@ -1,0 +1,22 @@
+class Box<T>
+{
+	
+}
+class SuperBox<T> extends Box<T>
+{
+	
+}
+
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Box<Object> b1=new Box<String>();
+		Box<String> b2=new SuperBox<String>();
+		//Box<Object> b3=new SuperBox<String>();
+		
+	}
+
+}
