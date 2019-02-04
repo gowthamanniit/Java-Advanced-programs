@@ -1,0 +1,21 @@
+package generic;
+
+public class ter {
+	public float average(int...nums)
+	{
+		int sum=0;
+		for(int x:nums)
+		{
+			sum+=x;
+			
+		}
+		return ((float)sum/nums.length);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ter t=new ter();
+float avg=t.average(2,5,5);
+System.out.println(avg);
+	}
+
+}
