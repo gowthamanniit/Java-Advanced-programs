@@ -1,0 +1,28 @@
+package generic;
+
+public class Test9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBuffer st1=new StringBuffer("Tech");
+		StringBuffer st2=new StringBuffer("Tech");
+		
+		/*String st1=new String("Tech");
+		String st2=new String("Tech");*/
+		
+		if(st1==st2)
+			
+		{
+			System.out.println("one");
+		}
+		else if(st1.equals(st2))
+		{
+			System.out.println("two");
+		}
+		else
+		{
+			System.out.println("three");
+		}
+	}
+
+}
