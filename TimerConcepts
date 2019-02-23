@@ -27,3 +27,23 @@ public class Tim1 extends JPanel implements ActionListener{
 	}
 	
 }
+
+prpgram 2:
+=========
+package com.mkyong;
+
+import javax.swing.JFrame;
+
+public class Mainpgm 
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+				Tim1 obj=new Tim1();
+				JFrame f1=new JFrame();
+				f1.add(obj);
+				f1.setSize(700, 1000);
+				f1.setVisible(true);
+				f1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}
