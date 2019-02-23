@@ -1,0 +1,29 @@
+package com.mkyong;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.*;
+public class Tim1 extends JPanel implements ActionListener{
+
+
+	
+	Timer t1=new Timer(4,this);
+	int i=0;
+	public void paintComponent(Graphics g)
+	{
+		super.paintComponent(g);
+		setBackground(Color.GREEN);
+		g.drawString("gowthaman", 10+i, 100);
+		i++;
+		t1.start();
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		repaint();
+	}
+	
+}
