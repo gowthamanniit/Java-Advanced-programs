@@ -1,0 +1,21 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWrite12 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+try(FileWriter f1=new FileWriter("E:\\FileProgram\\test5.txt"))
+{
+	String source="This is File Writer Program";
+	char buffer[]=new char[source.length()];
+	source.getChars(0,source.length(), buffer,0);
+	//source.getChars(srcBegin, srcEnd, dst, dstBegin);
+	f1.write(buffer);
+} catch (IOException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
+}
+	}
+
+}
